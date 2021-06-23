@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProductsController extends Controller
 {
@@ -13,8 +14,15 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('products.home');
+    {   
+         $products = Product::latest()->get();
+        return view('products.home')->with('products', $products);
+        // dd(Auth::id());
+    }
+
+    public function list(){
+        $products = Product::all();
+        return view('products.list')->with('products', $products);
     }
 
     /**
@@ -118,4 +126,18 @@ class ProductsController extends Controller
         $product->delete();
         return redirect('/')->with('danger', 'product deleted successfully');
     }
+
+    public function search(Request $request){
+        // Get the search value from the request
+        $search = $request->input('search');
+    
+        // Search in the title and body columns from the posts table
+        $products = Product::query()
+            ->where('product_name', 'LIKE', "%{$search}%")
+            ->orWhere('category', 'LIKE', "%{$search}%")
+            ->get();
+    
+        // Return the search view with the resluts compacted
+        return view('products.search', compact('products'));
+    }   
 }

@@ -287,6 +287,8 @@
      </div>
 
   </div>
+
+  <div><iframe class="ml-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.5586386017853!2d4.33936601563311!3d50.89487867953916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3ac00000001%3A0x5293071d68a63709!2sAtomium!5e0!3m2!1sfr!2sbe!4v1623960900923!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
   <!--/container-->
 
 <!-- Toggle dropdown list -->

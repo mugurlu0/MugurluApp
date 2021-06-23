@@ -3,6 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content')
+<div class="bg-gray-800">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> <!--Replace with your tailwind.css once created-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
@@ -18,27 +19,27 @@
         border-color: #191919;
     }
     
-</style>  <div class="flex-1 text-right md:text-center bg-gray-300 border border-gray-400 rounded shadow p-2">
+</style>  <div class="flex-1 text-right md:text-center bg-gray-700 border border-gray-400 rounded shadow p-2">
     <div class="flex flex-row items-center">
-<a class="text-gray-700 uppercase text-xl font-bold" href="{{url('create')}}">Add product</a>   
+<a class="rounded text-white bg-blue-600 hover:bg-blue-300 focus:ring-2 focus:ring-purple-300 focus:ring-opacity-30 hover:text-black" href="{{url('create')}}">Add new product</a>   
 </div></div>
 <div class="container w-full mx-auto pt-20">
 		
-    <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-400 leading-normal">
+    <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-white-400 leading-normal">
         
         <!--Console Content-->
         
         <div class="flex flex-wrap">
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Metric Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow p-2">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
                             <div class="rounded p-3 bg-green-600"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">Total Revenue</h5>
-                            <h3 class="font-bold text-3xl text-gray-600">$3249 <span class="text-green-300"><i class="fas fa-caret-up"></i></span></h3>
+                            <h5 class="font-bold uppercase text-white-400">Total Revenue</h5>
+                            <h3 class="font-bold text-3xl text-white-600">$3249 <span class="text-green-300"><i class="fas fa-caret-up"></i></span></h3>
                         </div>
                     </div>
                 </div>
@@ -46,14 +47,14 @@
             </div>
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Metric Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow p-2">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
                             <div class="rounded p-3 bg-pink-600"><i class="fas fa-users fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">Total Users</h5>
-                            <h3 class="font-bold text-3xl text-gray-600">249 <span class="text-pink-300"><i class="fas fa-exchange-alt"></i></span></h3>
+                            <h5 class="font-bold uppercase text-white-400">Total Users</h5>
+                            <h3 class="font-bold text-3xl text-white-600">{{$users}} <span class="text-pink-300"><i class="fas fa-exchange-alt"></i></span></h3>
                         </div>
                     </div>
                 </div>
@@ -61,14 +62,14 @@
             </div>
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Metric Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow p-2">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
                             <div class="rounded p-3 bg-yellow-600"><i class="fas fa-user-plus fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">New Users</h5>
-                            <h3 class="font-bold text-3xl text-gray-600">2 <span class="text-yellow-600"><i class="fas fa-caret-up"></i></span></h3>
+                            <h5 class="font-bold uppercase text-white-400">New Users</h5>
+                            <h3 class="font-bold text-3xl text-white-600">2 <span class="text-yellow-600"><i class="fas fa-caret-up"></i></span></h3>
                         </div>
                     </div>
                 </div>
@@ -76,14 +77,14 @@
             </div>
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Metric Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow p-2">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
                             <div class="rounded p-3 bg-blue-600"><i class="fas fa-server fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">Server Uptime</h5>
-                            <h3 class="font-bold text-3xl text-gray-600">152 days</h3>
+                            <h5 class="font-bold uppercase text-white-400">Server Uptime</h5>
+                            <h3 class="font-bold text-3xl text-white-600">152 days</h3>
                         </div>
                     </div>
                 </div>
@@ -91,14 +92,14 @@
             </div>
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Metric Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow p-2">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
                             <div class="rounded p-3 bg-indigo-600"><i class="fas fa-tasks fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">To Do List</h5>
-                            <h3 class="font-bold text-3xl text-gray-600">7 tasks</h3>
+                            <h5 class="font-bold uppercase text-white-400">To Do List</h5>
+                            <h3 class="font-bold text-3xl text-white-600">7 tasks</h3>
                         </div>
                     </div>
                 </div>
@@ -106,14 +107,14 @@
             </div>
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Metric Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow p-2">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
                             <div class="rounded p-3 bg-red-600"><i class="fas fa-inbox fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">Issues</h5>
-                            <h3 class="font-bold text-3xl text-gray-600">3 <span class="text-red-300"><i class="fas fa-caret-up"></i></span></h3>
+                            <h5 class="font-bold uppercase text-white-400">Issues</h5>
+                            <h3 class="font-bold text-3xl text-white-600">3 <span class="text-red-300"><i class="fas fa-caret-up"></i></span></h3>
                         </div>
                     </div>
                 </div>
@@ -128,9 +129,9 @@
 
             <div class="w-full md:w-1/2 p-3">
                 <!--Graph Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow">
                     <div class="border-b border-gray-400 p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Graph</h5>
+                        <h5 class="font-bold uppercase text-white-600">Graph</h5>
                     </div>
                     <div class="p-5">
                         <canvas id="chartjs-7" class="chartjs" width="undefined" height="undefined"></canvas>
@@ -170,9 +171,9 @@
 
             <div class="w-full md:w-1/2 p-3">
                 <!--Graph Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow">
                     <div class="border-b border-gray-400 p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Graph</h5>
+                        <h5 class="font-bold uppercase text-white-600">Graph</h5>
                     </div>
                     <div class="p-5">
                         <canvas id="chartjs-0" class="chartjs" width="undefined" height="undefined"></canvas>
@@ -199,9 +200,9 @@
 
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Graph Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow">
                     <div class="border-b border-gray-400 p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Graph</h5>
+                        <h5 class="font-bold uppercase text-white-600">Graph</h5>
                     </div>
                     <div class="p-5">
                         <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
@@ -237,9 +238,9 @@
 
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Graph Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow">
                     <div class="border-b border-gray-400 p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Graph</h5>
+                        <h5 class="font-bold uppercase text-white-600">Graph</h5>
                     </div>
                     <div class="p-5"><canvas id="chartjs-4" class="chartjs" width="undefined" height="undefined"></canvas>
                         <script>
@@ -262,9 +263,9 @@
 
             <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                 <!--Template Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow">
                     <div class="border-b border-gray-400 p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Template</h5>
+                        <h5 class="font-bold uppercase text-white-600">Template</h5>
                     </div>
                     <div class="p-5">
          
@@ -275,17 +276,17 @@
 
             <div class="w-full p-3">
                 <!--Table Card-->
-                <div class="bg-gray-300 border border-gray-400 rounded shadow">
+                <div class="bg-gray-700 border border-gray-400 rounded shadow">
                     <div class="border-b border-gray-400 p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Table</h5>
+                        <h5 class="font-bold uppercase text-white-600">Table</h5>
                     </div>
                     <div class="p-5">
-                        <table class="w-full p-5 text-gray-700">
+                        <table class="w-full p-5 text-white-700">
                             <thead>
                                 <tr>
-                                    <th class="text-left text-gray-600">Name</th>
-                                    <th class="text-left text-gray-600">Side</th>
-                                    <th class="text-left text-gray-600">Role</th>
+                                    <th class="text-left text-white-600">Name</th>
+                                    <th class="text-left text-white-600">Side</th>
+                                    <th class="text-left text-white-600">Role</th>
                                 </tr>
                             </thead>
 
@@ -326,7 +327,7 @@
 </div> 
 <!--/container-->
 
-
+</div>
 <script>
 
 
@@ -382,6 +383,7 @@ function checkParent(t, elm) {
   return false;
 }
 
+document.querySelector('body').style.backgroundColor = 'rgba(31,41,55)';
 
 </script>
 @endsection
