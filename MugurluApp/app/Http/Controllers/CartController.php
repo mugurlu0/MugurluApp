@@ -45,19 +45,8 @@ $id = $request -> input('product_id');
             $cart -> quantity = $request -> input('quantity');
             $cart -> save();
         }
-
+// dd(back());
         return redirect() -> back() -> with('success', 'Product added to cart');
-    }
-    public
-    function searchstore(Request $request) {
-        // Create cart
-        $cart = new Cart;
-        $cart -> product_id = $request -> input('product_id');
-        $cart -> quantity = $request -> input('quantity');
-        $cart -> user_id = auth() -> user() -> id;
-        $cart -> save();
-        return back()->withInput();
-        // return redirect() -> back() -> with('success', 'Product added to cart');
     }
 
     public

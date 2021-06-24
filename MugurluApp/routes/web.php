@@ -45,9 +45,9 @@ Route::get('dashboard',[DashboardController::class, 'index'])->name('dashboard')
     
 Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotmanController@handle');
 
-Route::post('/search', [ProductsController::class, 'search']);
+Route::get('/search', [ProductsController::class, 'search']);
 
-Route::post('/search/add', [CartController::class, 'searchstore'])->name('add');
+Route::post('/search/add', [CartController::class, 'store'])->name('add');
 
 Route::post('/list', [CartController::class, 'store']);
 
