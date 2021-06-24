@@ -7,37 +7,45 @@
     <div class="w-full lg:w-1/5 px-6 text-xl text-gray-800 leading-normal">
         <p class="text-base font-bold py-2 lg:pb-6 text-gray-700">Menu</p>
         <div class="block lg:hidden sticky inset-0">
-            <button id="menu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-yellow-600 appearance-none focus:outline-none">
+            <button id="menu-toggle"
+                class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-yellow-600 appearance-none focus:outline-none">
                 <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                 </svg>
             </button>
         </div>
-        <div class="w-full sticky inset-0 hidden max-h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 my-2 lg:my-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:6em;" id="menu-content">
+        <div class="w-full sticky inset-0 hidden max-h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 my-2 lg:my-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20"
+            style="top:6em;" id="menu-content">
             <ul class="list-reset py-2 md:py-0">
-                <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent font-bold border-yellow-600">
-                    <a href='#section1' class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
+                <li
+                    class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent font-bold border-yellow-600">
+                    <a href='#section1'
+                        class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section 1</span>
                     </a>
                 </li>
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section2' class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
+                    <a href='#section2'
+                        class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section 2</span>
                     </a>
                 </li>
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section3' class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
+                    <a href='#section3'
+                        class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section 3</span>
                     </a>
                 </li>
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section4' class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
+                    <a href='#section4'
+                        class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section 4</span>
                     </a>
                 </li>
 
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section5' class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
+                    <a href='#section5'
+                        class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section 5</span>
                     </a>
                 </li>
@@ -49,7 +57,8 @@
     <section class="w-full lg:w-4/5">
 
         <!--Title-->
-        <h1 class="flex items-center font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-12 lg:mt-0 md:text-2xl">
+        <h1
+            class="flex items-center font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-12 lg:mt-0 md:text-2xl">
             Multi Section Form with Scrollspy
         </h1>
 
@@ -61,7 +70,8 @@
 
         <!--Card-->
         <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
-            <li>Using the CDN version of <a class="underline text-yellow-600" href="https://github.com/tailwindcss/custom-forms" target="_blank">Tailwind Custom Forms</a></li>
+            <li>Using the CDN version of <a class="underline text-yellow-600"
+                    href="https://github.com/tailwindcss/custom-forms" target="_blank">Tailwind Custom Forms</a></li>
             <li>This template uses jQuery for scrollspy</li>
         </div>
         <!--/Card-->
@@ -114,7 +124,8 @@
                         </label>
                     </div>
                     <div class="md:w-2/3">
-                        <textarea class="form-textarea block w-full focus:bg-white" id="my-textarea" value="" rows="8"></textarea>
+                        <textarea class="form-textarea block w-full focus:bg-white" id="my-textarea" value=""
+                            rows="8"></textarea>
                         <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
                     </div>
                 </div>
@@ -122,7 +133,9 @@
                 <div class="md:flex md:items-center">
                     <div class="md:w-1/3"></div>
                     <div class="md:w-2/3">
-                        <button class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                        <button
+                            class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                            type="button">
                             Save
                         </button>
                     </div>
@@ -145,7 +158,8 @@
 
                 <div class="md:flex mb-6">
                     <div class="md:w-1/3">
-                        <label class="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4" for="my-multiselect">
+                        <label class="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                            for="my-multiselect">
                             Multi Select
                         </label>
                     </div>
@@ -164,7 +178,9 @@
                 <div class="md:flex md:items-center">
                     <div class="md:w-1/3"></div>
                     <div class="md:w-2/3">
-                        <button class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                        <button
+                            class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                            type="button">
                             Save
                         </button>
                     </div>
@@ -238,7 +254,9 @@
                 <div class="md:flex md:items-center">
                     <div class="md:w-1/3"></div>
                     <div class="md:w-2/3">
-                        <button class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                        <button
+                            class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                            type="button">
                             Save
                         </button>
                     </div>
@@ -257,19 +275,26 @@
         <!--Card-->
         <div id='section5' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
 
-            <blockquote class="border-l-4 border-yellow-600 italic my-4 pl-8 md:pl-12">Final confirmation disclaimer message etc</blockquote>
+            <blockquote class="border-l-4 border-yellow-600 italic my-4 pl-8 md:pl-12">Final confirmation disclaimer
+                message etc</blockquote>
 
             <div class="pt-8">
 
-                <button class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded mr-4" type="button">
+                <button
+                    class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded mr-4"
+                    type="button">
                     Save
                 </button>
 
-                <button class="shadow bg-yellow-100 hover:bg-yellow-200 focus:shadow-outline focus:outline-none text-gray-700 font-bold py-2 px-4 rounded mr-4" type="button">
+                <button
+                    class="shadow bg-yellow-100 hover:bg-yellow-200 focus:shadow-outline focus:outline-none text-gray-700 font-bold py-2 px-4 rounded mr-4"
+                    type="button">
                     Additional Action
                 </button>
 
-                <button class="shadow bg-yellow-100 hover:bg-yellow-200 focus:shadow-outline focus:outline-none text-gray-700 font-bold py-2 px-4 rounded" type="button">
+                <button
+                    class="shadow bg-yellow-100 hover:bg-yellow-200 focus:shadow-outline focus:outline-none text-gray-700 font-bold py-2 px-4 rounded"
+                    type="button">
                     Additional Action
                 </button>
 
@@ -283,66 +308,75 @@
 
     <!--Back link -->
     <div class="w-full lg:w-4/5 lg:ml-auto text-base md:text-sm text-gray-600 px-4 py-24 mb-12">
-      <span class="text-base text-yellow-600 font-bold">&lt;</span> <a href="#" class="text-base md:text-sm text-yellow-600 font-bold no-underline hover:underline">Back link</a>
-     </div>
+        <span class="text-base text-yellow-600 font-bold">&lt;</span> <a href="#"
+            class="text-base md:text-sm text-yellow-600 font-bold no-underline hover:underline">Back link</a>
+    </div>
 
-  </div>
+</div>
 
-  <div><iframe class="ml-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.5586386017853!2d4.33936601563311!3d50.89487867953916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3ac00000001%3A0x5293071d68a63709!2sAtomium!5e0!3m2!1sfr!2sbe!4v1623960900923!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-  <!--/container-->
+<div style="display:flex;justify-content:center" class="mb-3"><iframe class="ml-6"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.5586386017853!2d4.33936601563311!3d50.89487867953916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3ac00000001%3A0x5293071d68a63709!2sAtomium!5e0!3m2!1sfr!2sbe!4v1623960900923!5m2!1sfr!2sbe"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+<!--/container-->
 
 <!-- Toggle dropdown list -->
 <script>
-/*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
-var userMenuDiv = document.getElementById("userMenu");
-var userMenu = document.getElementById("userButton");
+    var userMenuDiv = document.getElementById("userMenu");
+    var userMenu = document.getElementById("userButton");
 
-var helpMenuDiv = document.getElementById("menu-content");
-var helpMenu = document.getElementById("menu-toggle");
+    var helpMenuDiv = document.getElementById("menu-content");
+    var helpMenu = document.getElementById("menu-toggle");
 
-document.onclick = check;
+    document.onclick = check;
 
-function check(e){
-var target = (e && e.target) || (event && event.srcElement);
+    function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
 
-//User Menu
-if (!checkParent(target, userMenuDiv)) {
-// click NOT on the menu
-if (checkParent(target, userMenu)) {
-  // click on the link
-  if (userMenuDiv.classList.contains("invisible")) {
-    userMenuDiv.classList.remove("invisible");
-  } else {userMenuDiv.classList.add("invisible");}
-} else {
-  // click both outside link and outside menu, hide menu
-  userMenuDiv.classList.add("invisible");
-}
-}
+        //User Menu
+        if (!checkParent(target, userMenuDiv)) {
+            // click NOT on the menu
+            if (checkParent(target, userMenu)) {
+                // click on the link
+                if (userMenuDiv.classList.contains("invisible")) {
+                    userMenuDiv.classList.remove("invisible");
+                } else {
+                    userMenuDiv.classList.add("invisible");
+                }
+            } else {
+                // click both outside link and outside menu, hide menu
+                userMenuDiv.classList.add("invisible");
+            }
+        }
 
-//Help Menu
-if (!checkParent(target, helpMenuDiv)) {
-// click NOT on the menu
-if (checkParent(target, helpMenu)) {
-  // click on the link
-  if (helpMenuDiv.classList.contains("hidden")) {
-    helpMenuDiv.classList.remove("hidden");
-  } else {helpMenuDiv.classList.add("hidden");}
-} else {
-  // click both outside link and outside menu, hide menu
-  helpMenuDiv.classList.add("hidden");
-}
-}
+        //Help Menu
+        if (!checkParent(target, helpMenuDiv)) {
+            // click NOT on the menu
+            if (checkParent(target, helpMenu)) {
+                // click on the link
+                if (helpMenuDiv.classList.contains("hidden")) {
+                    helpMenuDiv.classList.remove("hidden");
+                } else {
+                    helpMenuDiv.classList.add("hidden");
+                }
+            } else {
+                // click both outside link and outside menu, hide menu
+                helpMenuDiv.classList.add("hidden");
+            }
+        }
 
-}
+    }
 
-function checkParent(t, elm) {
-while(t.parentNode) {
-if( t == elm ) {return true;}
-t = t.parentNode;
-}
-return false;
-}
+    function checkParent(t, elm) {
+        while (t.parentNode) {
+            if (t == elm) {
+                return true;
+            }
+            t = t.parentNode;
+        }
+        return false;
+    }
 
 </script>
 
@@ -351,56 +385,58 @@ return false;
 
 <!-- Scroll Spy -->
 <script>
-/* http://jsfiddle.net/LwLBx/ */
+    /* http://jsfiddle.net/LwLBx/ */
 
-// Cache selectors
-var lastId,
-topMenu = $("#menu-content"),
-topMenuHeight = topMenu.outerHeight()+175,
-// All list items
-menuItems = topMenu.find("a"),
-// Anchors corresponding to menu items
-scrollItems = menuItems.map(function(){
-  var item = $($(this).attr("href"));
-  if (item.length) { return item; }
-});
+    // Cache selectors
+    var lastId,
+        topMenu = $("#menu-content"),
+        topMenuHeight = topMenu.outerHeight() + 175,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function () {
+            var item = $($(this).attr("href"));
+            if (item.length) {
+                return item;
+            }
+        });
 
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
-menuItems.click(function(e){
-var href = $(this).attr("href"),
-  offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-$('html, body').stop().animate({ 
-  scrollTop: offsetTop
-}, 300);
-if (!helpMenuDiv.classList.contains("hidden")) {
-    helpMenuDiv.classList.add("hidden");
-  }
-e.preventDefault();
-});
+    // Bind click handler to menu items
+    // so we can get a fancy scroll animation
+    menuItems.click(function (e) {
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        if (!helpMenuDiv.classList.contains("hidden")) {
+            helpMenuDiv.classList.add("hidden");
+        }
+        e.preventDefault();
+    });
 
-// Bind to scroll
-$(window).scroll(function(){
-// Get container scroll position
-var fromTop = $(this).scrollTop()+topMenuHeight;
+    // Bind to scroll
+    $(window).scroll(function () {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight;
 
-// Get id of current scroll item
-var cur = scrollItems.map(function(){
- if ($(this).offset().top < fromTop)
-   return this;
-});
-// Get the id of the current element
-cur = cur[cur.length-1];
-var id = cur && cur.length ? cur[0].id : "";
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
 
-if (lastId !== id) {
-   lastId = id;
-   // Set/remove active class
-   menuItems
-     .parent().removeClass("font-bold border-yellow-600")
-     .end().filter("[href='#"+id+"']").parent().addClass("font-bold border-yellow-600");
-}                   
-});
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+                .parent().removeClass("font-bold border-yellow-600")
+                .end().filter("[href='#" + id + "']").parent().addClass("font-bold border-yellow-600");
+        }
+    });
 
 </script>
 @endsection

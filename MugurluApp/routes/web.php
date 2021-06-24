@@ -47,9 +47,12 @@ Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotmanController@
 
 Route::post('/search', [ProductsController::class, 'search']);
 
-Route::post('/list', [CartController::class, 'store']);
 Route::post('/search/add', [CartController::class, 'searchstore'])->name('add');
+
+Route::post('/list', [CartController::class, 'store']);
 
 Route::get('/profile/{id}', [PageController::class, 'profile']);
 Route::put('/profile/{id}', [PageController::class, 'updateProfile']);
 Route::get('/checkout/{user_id}', [CartController::class, 'checkout']);
+Route::get('/product/{id}', [ProductsController::class, 'show']);
+Route::post('/cart/{id}', [CartController::class, 'store']);

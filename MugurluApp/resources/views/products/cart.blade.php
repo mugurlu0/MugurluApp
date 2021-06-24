@@ -20,11 +20,13 @@
             </div>
             <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
                 <div class="flex w-2/5">
-                    <!-- product -->
+
+                @foreach($products as $product)
+                <!-- product -->
+                    
                     <div class="w-20">
                         <img class="h-24" src="https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z" alt="">
                     </div>
-                    @foreach($products as $product)
                     <div class="flex flex-col justify-between ml-4 flex-grow">
                         <span class="font-bold text-sm">{{$product->product_name}}</span>
                         <span class="text-red-500 text-xs">{{$product->category}}</span>
@@ -61,7 +63,7 @@
             <div id="summary" class="w-1/4 px-8 py-10">
                 <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
                 <div class="flex justify-between mt-10 mb-5">
-                    <span class="font-semibold text-sm uppercase">Items  {{$products->count()}}</span>
+                    <span class="font-semibold text-sm uppercase">Items {{$products->count()}}</span>
                     <span class="font-semibold text-sm">{{$total}}$</span>
                 </div>
                 <div>
@@ -80,7 +82,9 @@
                         <span>Total cost</span>
                         <span>$ {{$total}}</span>
                     </div>
-                    <button class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"><a href="{{url('checkout/'.auth()->user()->id)}}"> Checkout</a></button>
+                    <button
+                        class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"><a
+                            href="{{url('checkout/'.auth()->user()->id)}}"> Checkout</a></button>
                 </div>
             </div>
 
